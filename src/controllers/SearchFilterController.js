@@ -14,8 +14,7 @@ module.exports = function filter(itemName, itemQuality) {
     if (ok === false) {
         return false;
     }
-    console.log(itemQuality);
-    if (itemQuality >= 6) {
+    if (itemQuality >= 6 || itemQuality <= 0) {
         return false;
     }
 
