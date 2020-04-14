@@ -17,4 +17,3 @@ app.use(routes);
 // MongoDB (Não-relacional)
 
 app.listen(process.env.PORT || 3333);
-console.log("Listening: 3333");
