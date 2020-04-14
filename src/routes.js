@@ -1,8 +1,9 @@
 const { Router } = require("express");
-const SearchItens = require("./controllers/SeachItensController");
+const selectController = require("./controllers/selectController.js");
 
 const routes = Router();
 
-routes.post("/search", SearchItens.index);
+routes.get("/product", selectController.searchProduct);
+routes.post("/getProduct", selectController.getProduct);
 
 module.exports = routes;
